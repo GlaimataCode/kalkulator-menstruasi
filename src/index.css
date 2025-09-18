@@ -1,4 +1,6 @@
-/* Removed Tailwind directives because Tailwind CSS is not configured or supported in this environment */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
 	margin: 0;

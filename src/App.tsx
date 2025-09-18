@@ -12,10 +12,11 @@ const DateInput: React.FC<DateInputProps> = ({
 	value, onChange
 }) => (
 	<div>
-		<label className="block text-sm font-medium text-gray-700 mb-2">
+		<label htmlFor="lastPeriodDate" className="block text-sm font-medium text-gray-700 mb-2">
 			Tanggal Hari Pertama Haid Terakhir
 		</label>
 		<input
+			id="lastPeriodDate"
 			type="date"
 			value={value}
 			onChange={onChange}
@@ -118,10 +119,11 @@ const MenstruationCalculator: React.FC = () => {
 			<div className="space-y-4">
 				<DateInput value={lastPeriodDate} onChange={(e) => setLastPeriodDate(e.target.value)} />
 				<div>
-					<label className="block text-sm font-medium text-gray-700 mb-2">
+					<label htmlFor="cycleLength" className="block text-sm font-medium text-gray-700 mb-2">
 						Panjang Siklus (hari)
 					</label>
 					<select
+						id="cycleLength"
 						value={cycleLength}
 						onChange={(e) => setCycleLength(Number(e.target.value))}
 						className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"

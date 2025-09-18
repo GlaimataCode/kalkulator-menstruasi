@@ -1,0 +1,2 @@
+- [x] Add id="lastPeriodDate" to date input and htmlFor="lastPeriodDate" to its label in DateInput component
+- [x] Add id="cycleLength" to the select element for cycle length
