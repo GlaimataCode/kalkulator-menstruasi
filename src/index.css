@@ -1,0 +1,18 @@
+/* Removed Tailwind directives because Tailwind CSS is not configured or supported in this environment */
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.calendar-day {
+	transition: all 0.2s ease;
+}
+
+.calendar-day:hover {
+	transform: scale(1.05);
+}
